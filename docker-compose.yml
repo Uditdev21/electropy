@@ -1,0 +1,17 @@
+services:
+  battery_monitor:
+    build: .
+    container_name: battery_monitor
+    restart: always
+
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
+
+    environment:
+      SERIAL_PORT: "/dev/ttyUSB0"
+      BAUDRATE: "115200"
+      API_URL: "https://stage.gwtpl.co/api/monitoring/add_battery_data"
+      API_KEY: "6513d871943f3acaf3ef2dee663980bb2087ef2a0a1f9028367906c8d1ffe375"
+
+    tty: true
+    stdin_open: true

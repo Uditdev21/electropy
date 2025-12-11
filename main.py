@@ -20,7 +20,7 @@ API_KEY = os.getenv(
     "API_KEY",
     "6513d871943f3acaf3ef2dee663980bb2087ef2a0a1f9028367906c8d1ffe375"
 )
-SERIAL_PORT = os.getenv("SERIAL_PORT", "/dev/ttyUSB0")
+SERIAL_PORT = os.getenv("SERIAL_PORT", "/dev/ttyUSB1")
 BAUDRATE = int(os.getenv("BAUDRATE", "115200"))  # UPDATED
 READ_TIMEOUT = 2.0
 POST_INTERVAL = 5.0

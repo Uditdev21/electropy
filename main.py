@@ -63,7 +63,7 @@ def parse_line_to_payload(line: str):
             raise ValueError("battery_percentage missing")
 
         payload = {
-            "battery_id": "4",
+            "battery_id": "2",
             "battery_percentage": str(batt_pct),
             "battery_status": "electricity" if ac_status == "electricity" else "no_electricity",
         }
